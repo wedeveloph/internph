@@ -1,16 +1,13 @@
+// import data from './internships.json'
 
-
-var internships = new Vue({
+var main = new Vue({
   el: '#internships',
   data: {
     ascending: false,
     sortColumn: '',
-    rows: [
-        
-      {  company: "COMPANY", pay: '305-917-1301', notes: 'IT Manager', industry: 'industry' },
-      {  company: "COMPANY", pay: '210-684-8953', notes: 'Paleontologist', industry: 'industry' }
-    ]
+    rows: data
   },
+    
   methods: {
       
     "sortTable": function sortTable(col) {
@@ -33,12 +30,17 @@ var internships = new Vue({
       })
     }
   },
+    
   computed: {
     "columns": function columns() {
-      if (this.rows.length == 0) {
-        return [];
-      }
-      return Object.keys(this.rows[0])
+        
+
+
+          if (this.rows.length == 0) {
+            return [];
+          }
+          return Object.keys(this.rows[0])
+        
     }
   }
     
