@@ -1,0 +1,17 @@
+
+
+table#internships{
+    border:1px solid #0000ff;
+    border-radius:10px;
+    padding:1em;
+}
+
+th{
+    min-width:150px;
+}
+
+thead{
+    color: #0000ff;
+    text-transform: capitalize;
+    cursor: s-resize;
+}
