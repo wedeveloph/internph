@@ -2,33 +2,35 @@
 
 <head>
     
-<script src="https://unpkg.com/vue"></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.1.10/vue.min.js'></script>
 
- <script type="text/javascript">//<![CDATA[
 
-    window.onload=function(){
-      
-new Vue({
-  el: '#app',
-  data: {
-    message: 'Hello Vue.js!'
-  }
-})
+</head>
 
-    }
+<body>
 
-  //]]></script>
-    </head>
-    <body>
-    
-    
 
-<div id="app">
-  <p>{{ message }}</p>
-</div>
+
+    <div id="main-list">
         
-    
-    </body>
+   <table id="internships">
+  <thead>
+    <tr>
+      <th v-for="col in columns" v-on:click="sortTable(col)">{{col}}
+        <div class="arrow" v-if="col == sortColumn" v-bind:class="ascending ? 'arrow_up' : 'arrow_down'"></div>
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr v-for="row in rows">
+      <td v-for="col in columns">{{row[col]}}</td>
+    </tr>
+  </tbody>
+</table>
 
+    </div>
+        
 
-</html>
+    <script src="main.js"></script>
+
+</body></html>
