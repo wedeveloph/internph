@@ -5,6 +5,8 @@
 
 }
 
+*{box-sizing: border-box;}
+
 body{
     font-size:1.2em;
 }
@@ -18,9 +20,9 @@ body{
 }
 
 #header.box{
-    padding:1em 0 4em 0;
-    min-height:290px;
-    height:30vw;
+    padding:0em 0 4em 0;
+    min-height:340px;
+    height:35vw;
     max-height:390px;
     display: flex;
     justify-content: center;
@@ -28,7 +30,7 @@ body{
 }
 
 #header .box-inner{
-    padding:5vw;
+    padding:3vw;
     box-sizing: border-box;
 }
 
@@ -101,7 +103,7 @@ a.link:hover {
 
 
 table {
-    width:100%;
+    width:90%;
     max-width:900px;
     border-collapse: collapse;
     font-size:1em;
@@ -146,11 +148,18 @@ td.t-name{
     font-weight:600;
     color:#fff;
     line-height:1.4em;
-    width:24%;
+    width:22%;
     max-width:200px;
 }
 
-td.t-pay{font-size:.8em; line-height:1.3em; width:18%; padding-top:2em; text-transform: capitalize;}
+td.t-pay{font-size:.8em; line-height:1.3em; width:15%; padding-top:2em; text-transform: capitalize;}
+
+
+td.t-notes{
+    font-size:.7em;
+    line-height:1.3em;
+}
+
 
 td.t-pay[data-pay="salary"]::after{
     content: " 💸";
@@ -159,12 +168,6 @@ td.t-pay[data-pay="salary"]::after{
 
 td.t-pay[data-pay="stipend only"]::after{
     content: " 🚌";
-}
-
-
-td.t-notes{
-    font-size:.7em;
-    line-height:1.3em;
 }
 
 /* FOOTER */
@@ -205,5 +208,26 @@ footer a:hover {
     body{
         font-size:1em;
     }
+    
+    td{
+        padding-left: .3em;
+        padding-right: .3em;
+    }
+    
+    td.t-name{
+        
+    }
+
+    td.t-pay{
+        
+        font-size:.7em;
+        
+    }
+
+
+    td.t-notes{
+        
+    }
+
        
 }
