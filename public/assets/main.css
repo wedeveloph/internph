@@ -5,15 +5,23 @@
 
 }
 
+body{
+    font-size:1.2em;
+}
+
 .box{
     max-width:1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 #header.box{
-    padding-bottom:2em;
-    min-height:300px;
+    padding:1em 0 4em 0;
+    min-height:290px;
     height:30vw;
-    max-height:420px;
+    max-height:390px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -25,14 +33,22 @@
 }
 
 #list.box{
-    
-    padding-bottom:2em;
+    padding:1em 0;
 }
 
 h1.site-title{
-    font-size:3.8em;
+    font-size:3.2em;
+    line-height:1.2em;
     padding-top:.5em;
     color:#fff;
+}
+
+h1.site-title span{
+    display: block;
+    font-size:18px;
+    line-height:12px;
+    text-transform: uppercase;
+    color:#7c7c7c;
 
 }
 
@@ -60,8 +76,21 @@ a.link:hover {
 
 /* TABLE */
 
-#internships h1{
+#internships{
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.internships-top{
+    width:100%;
+    justify-content: space-around;
+}
+
+#internships h2{
     float:left;
+    font-size:1.3em;
 }
 
 #internships input.t-search{
@@ -71,23 +100,12 @@ a.link:hover {
     max-width:270px;
 }
 
-@media screen and (max-width: 800px){
-    
-    #internships h1, #internships input.t-search{
-        float:left;
-        clear:both;
-    }
-       
-}
 
 table {
-    display: block;
-    clear: both;
-    margin:1em 0;
     width:100%;
     max-width:900px;
     border-collapse: collapse;
-    font-size:1.2em;
+    font-size:1em;
     
 }
 
@@ -98,10 +116,11 @@ table.internship-table{
 
 thead tr{
     text-align: left;
+    font-size:1.3em;
 }
 
 th {
-    padding:0 1em;
+    padding:0 .7em;
 }
 
 td{
@@ -116,9 +135,7 @@ tr{
     border-bottom:1px solid #ccc;
 }
 
-tr td{
-}
-
+tr 
 th.th-sort{cursor: s-resize;}
 
 thead {
@@ -129,20 +146,33 @@ thead {
 td.t-name{
     font-weight:600;
     color:#fff;
-    line-height:1.3em;
-    width:25%;
-    max-width:150px;
+    line-height:1.4em;
+    width:24%;
+    max-width:200px;
 }
 
-td.t-pay{font-size:.7em; line-height:1.3em; width:18%; padding-top:2em;}
+td.t-pay{font-size:.8em; line-height:1.3em; width:18%; padding-top:2em; text-transform: capitalize;}
+
+td.t-pay[data-pay="salary"]::after{
+    content: " 💸";
+}
+
+
+td.t-pay[data-pay="stipend only"]::after{
+    content: " 🚌";
+}
+
 
 td.t-notes{
-    font-size:.6em;
+    font-size:.7em;
     line-height:1.3em;
-    width:57%;
 }
 
 /* FOOTER */
+
+#footer{
+    padding-top:3.5em;
+}
 
 #footer a,
 footer a {
@@ -159,4 +189,22 @@ footer a {
 footer a:hover {
     color: var(--accent-over);
     text-shadow: 0 0 15px var(--accent-over);
+}
+
+
+@media screen and (max-width: 800px){
+    
+    .internships-top{
+        margin:.8em;
+        
+    }
+    
+    #internships h2, #internships input.t-search{
+        float:left;
+    }
+    
+    body{
+        font-size:1em;
+    }
+       
 }

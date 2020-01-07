@@ -49,11 +49,9 @@ var main = new Vue({
                 
                 switch(durr[0].replace(/ /g,'')){
                     case "pay":
-                        temp.pay = durr[1]; break;
-                    case "role":
-                        temp.role = durr[1]; break;
+                        temp.pay = durr[1].trim().toLowerCase(); break;
                     case "notes":
-                        temp.notes = durr[1]; break;
+                        temp.notes = durr[1].trim(); break;
                 } 
             }
             
