@@ -33,7 +33,7 @@ body{
 }
 
 #list.box{
-    padding:1em 0;
+    padding:1.4em 0;
 }
 
 h1.site-title{
@@ -80,7 +80,6 @@ a.link:hover {
     justify-content: center;
     display: flex;
     flex-wrap: wrap;
-    
 }
 
 .internships-top{
