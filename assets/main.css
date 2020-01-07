@@ -152,11 +152,11 @@ td.t-name{
     max-width:200px;
 }
 
-td.t-pay{font-size:.8em; line-height:1.3em; width:15%; padding-top:2em; text-transform: capitalize;}
+td.t-pay{font-size:.9em; line-height:1.3em; width:15%; padding-top:2em; text-transform: capitalize;}
 
 
 td.t-notes{
-    font-size:.7em;
+    font-size:.85em;
     line-height:1.3em;
 }
 
