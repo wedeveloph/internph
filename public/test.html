@@ -5,6 +5,7 @@
 
 
     <title>Interns.ph</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="assets/clean.css" type="text/css">
     <link rel="stylesheet" href="assets/main.css" type="text/css">
@@ -19,7 +20,8 @@
 
     <div id="container">
 
-        <div class="box" style="min-height:20vh;padding-bottom:2em;">
+        <div class="box" id="header">
+            <div class="box-inner">
 
             <h1 class="site-title">Pay interns.</h1>
             <p>Essentially: unpaid internships perpetuate inequality and poorer work. The Philippines might still be far from justice on this end, but if you have the agency to choose, we hope this list helps you find meaningful companies to work for.</p>
@@ -28,10 +30,10 @@
                 <a class="link" href="http://bit.ly/payinternsph">Add an internship?</a>
 
             </div>
-
+            </div>
         </div>
 
-        <div class="box" style="padding-bottom:2em">
+        <div class="box" id="list">
 
 
             <div id="internships">
@@ -42,15 +44,13 @@
 
                 <center>
                     
-  
-                    
-                    <table v-if="entries">
+                    <table class="internship-table" v-if="entries">
                         <thead>
                             <tr>
-                                <th v-on:click="sortTable(col)">
+                                <th  v-on:click="sortTable(company)" class="th-sort">
                                     Company
                                 </th>
-                                <th v-on:click="sortTable(col)">
+                                <th v-on:click="sortTable(pay)" class="th-sort">
                                     Pay?
                                 </th>
                                 <th>

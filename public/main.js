@@ -10,6 +10,8 @@ var main = new Vue({
     el: '#internships',
     data: {
         search: "",
+        by: "company",
+        reverse: false,
         entries: []
     },
     
@@ -91,8 +93,9 @@ var main = new Vue({
             }, 1000);
         },
         
-        sort: function(){
+        sort: function(key){
             
+    
         }
         
     },
