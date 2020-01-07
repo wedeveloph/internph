@@ -48,9 +48,6 @@
                                     Company
                                 </th>
                                 <th v-on:click="sortTable(col)">
-                                    Role
-                                </th>
-                                <th v-on:click="sortTable(col)">
                                     Pay?
                                 </th>
                                 <th>
@@ -62,16 +59,13 @@
                         <tbody>
                             <tr v-for="entry in entries">
                         
-                              <td>
+                              <td class="t-name">
                                   {{ entry.company }}
                               </td>  
-                              <td>
-                                  {{ entry.role }}
-                              </td>  
-                              <td>
+                              <td class="t-pay">
                                   {{ entry.pay }}
                               </td>  
-                              <td>
+                              <td class="t-notes">
                                   {{ entry.notes }}
                               </td>  
                             </tr>
@@ -84,8 +78,7 @@
 
             <div class="box" id="footer" style="padding-top:2em;">
                 <footer>
-                    Footer element. &nbsp;
-                    Created by <a href="https://developh.org" target="_blank">Developh</a> in 2020.
+                    Created for justice by <a href="https://developh.org" target="_blank">Developh</a> in 2020. &hearts;
                 </footer>
 
             </div>

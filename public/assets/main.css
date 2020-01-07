@@ -36,10 +36,24 @@ table#internships {
     border: 1px solid var(--accent);
     border-radius: 10px;
     padding: 1em;
+    max-width:900px;
 }
 
 th {
     min-width: 150px;
+}
+
+td{
+    padding:.8em 1em;
+    vertical-align: top !important;
+}
+
+tr{
+    display:table-row;
+    border-collapse: separate;
+    border:2px solid #ccc;
+    line-height:2.5em;
+    vertical-align: middle;
 }
 
 thead {
@@ -48,6 +62,18 @@ thead {
     cursor: s-resize;
 }
 
+td.t-name{
+    font-weight:600;
+    color:#fff;
+    line-height:1.3em;
+}
+
+td.t-pay{font-size:.9em;}
+
+td.t-notes{
+    font-size:.8em;
+    line-height:1.3em;
+}
 
 /* FOOTER */
 
