@@ -81,6 +81,10 @@ var main = new Vue({
             this.entries = uwu;
             
             }, 1000);
+        },
+        
+        sort: function(){
+            
         }
         
     }
