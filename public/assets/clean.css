@@ -6,10 +6,10 @@ html { font-family: 'Inter', sans-serif; }
 
  :root {
 
-     --bg-color: #fdfdfd;
+     --bg-color: #2f2a2a;
      --bg-dark-color: #121212;
 
-     --text-color: #333236;
+     --text-color: #b5b5b1;
      --text-color-darker: #252427;
      --text-dark-color: #768081;
      --text-light-color: #c9c6d1;
@@ -51,7 +51,9 @@ html { font-family: 'Inter', sans-serif; }
      
      display: flex;
      flex-wrap: wrap;
+     
      justify-content: center;
+     align-content: flex-start;
      align-items: center;
 
      box-sizing: border-box;
@@ -61,6 +63,7 @@ html { font-family: 'Inter', sans-serif; }
  }
 
 .box{
+    width:100%;
     align-self: center;
 }
 
