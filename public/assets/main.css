@@ -5,6 +5,14 @@
 
 }
 
+.box{
+    max-width:1000px;
+}
+
+h1.site-title{
+    font-size:3.8em;
+    padding-top:.5em;
+}
 
 a.link {
     display: inline-block;
@@ -33,10 +41,9 @@ a.link:hover {
 
 
 table#internships {
-    border: 1px solid var(--accent);
-    border-radius: 10px;
     padding: 1em;
     max-width:900px;
+    border-collapse: collapse;
 }
 
 th {
@@ -44,16 +51,17 @@ th {
 }
 
 td{
-    padding:.8em 1em;
+    padding:1.3em 1em;
     vertical-align: top !important;
 }
 
 tr{
-    display:table-row;
-    border-collapse: separate;
-    border:2px solid #ccc;
-    line-height:2.5em;
+    line-height:3.5em;
     vertical-align: middle;
+    border-bottom:1px solid #ccc;
+}
+
+tr td{
 }
 
 thead {
@@ -66,9 +74,10 @@ td.t-name{
     font-weight:600;
     color:#fff;
     line-height:1.3em;
+    
 }
 
-td.t-pay{font-size:.9em;}
+td.t-pay{font-size:.9em; line-height:1.3em;}
 
 td.t-notes{
     font-size:.8em;

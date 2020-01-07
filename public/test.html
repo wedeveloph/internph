@@ -19,16 +19,13 @@
 
     <div id="container">
 
-        <div class="box" style="min-height:100px;padding-bottom:2em;">
+        <div class="box" style="min-height:20vh;padding-bottom:2em;">
 
-            <h1>About</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam volutpat gravida arcu, ac vehicula est dapibus tempor. Nam pretium sapien quis leo interdum egestas. Donec id auctor nisl. Mauris eget aliquam libero. In cursus interdum diam, sed laoreet odio sodales eget. Integer vel mauris vitae risus vehicula tempor. Suspendisse eleifend eget sem nec rutrum. Proin sem dolor, tempor ut mauris id, auctor laoreet enim. Cras elementum tellus eros, a elementum neque auctor vel. Phasellus dictum consequat nisi, et commodo metus dignissim iaculis.</p>
+            <h1 class="site-title">Pay interns.</h1>
+            <p>Essentially: unpaid internships perpetuate inequality and poorer work. The Philippines might still be far from justice on this end, but if you have the agency to choose, we hope this list helps you find meaningful companies to work for.</p>
 
             <div class="resource-links">
-                <a class="link" href="">Link</a>
-                <a class="link" href="">Link</a>
-                <a class="link" href="">Link</a>
-                <a class="link" href="">Link</a>
+                <a class="link" href="http://bit.ly/payinternsph">Add an internship?</a>
 
             </div>
 
@@ -38,7 +35,7 @@
 
 
             <div id="main-list">
-                <h1 style="text-align: center;">Main</h1>
+                <h1 style="text-align: center;"> <span id="count"></span> companies & counting... </h1>
 
                 <center>
                     <table id="internships" v-if="entries">
@@ -78,6 +75,7 @@
 
             <div class="box" id="footer" style="padding-top:2em;">
                 <footer>
+                    Last updated <span id="last"></span>. 
                     Created for justice by <a href="https://developh.org" target="_blank">Developh</a> in 2020. &hearts;
                 </footer>
 

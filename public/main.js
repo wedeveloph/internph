@@ -1,3 +1,7 @@
+
+document.getElementById("last").innerHTML = document.lastModified;
+
+
 // import data from './internships.json'
 var sheet = "https://spreadsheets.google.com/feeds/list/1073N87suMlax63_94Jip5AaQxcq2Hxw5EnTJYMNKbg0/2/public/basic?alt=json";
 
@@ -9,7 +13,8 @@ var main = new Vue({
     },
     
     mounted(){
-      this.fetchData();  
+      this.fetchData();
+       
     },
     
     methods: {
@@ -77,8 +82,10 @@ var main = new Vue({
             
             setTimeout(() => {
             
-       
+            document.getElementById("count").innerHTML = uwu.length;
             this.entries = uwu;
+            
+    
             
             }, 1000);
         },
