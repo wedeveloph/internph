@@ -41,17 +41,39 @@
                 <h1 style="text-align: center;">Main</h1>
 
                 <center>
-                    <table id="internships">
+                    <table id="internships" v-if="entries">
                         <thead>
                             <tr>
-                                <th v-for="col in columns" v-on:click="sortTable(col)">{{col}}
-                                    <div class="arrow" v-if="col == sortColumn" v-bind:class="ascending ? 'arrow_up' : 'arrow_down'"></div>
+                                <th v-on:click="sortTable(col)">
+                                    Company
                                 </th>
+                                <th v-on:click="sortTable(col)">
+                                    Role
+                                </th>
+                                <th v-on:click="sortTable(col)">
+                                    Pay?
+                                </th>
+                                <th>
+                                    Notes
+                                </th>
+                                
                             </tr>
                         </thead>
                         <tbody>
-                            <tr v-for="row in rows">
-                                <td v-for="col in columns">{{row[col]}}</td>
+                            <tr v-for="entry in entries">
+                        
+                              <td>
+                                  {{ entry.company }}
+                              </td>  
+                              <td>
+                                  {{ entry.role }}
+                              </td>  
+                              <td>
+                                  {{ entry.pay }}
+                              </td>  
+                              <td>
+                                  {{ entry.notes }}
+                              </td>  
                             </tr>
                         </tbody>
                     </table>
@@ -72,26 +94,7 @@
     </div>
 
     <script>
-        // Make sure it is public or set to Anyone with link can view 
-        var url = "https://spreadsheets.google.com/feeds/list/1073N87suMlax63_94Jip5AaQxcq2Hxw5EnTJYMNKbg0/2/public/basic?alt=json";
-
-        var entry;
-
-        $.getJSON(url, function(res) {
-
-                var entry = res.feed.entry[1];
-
-                var item = res.feed.entry[1];
-
-                console.log(entry);
-            })
-            .done(function(res) {
-                console.log("done!");
-                entry = res;
-                data = res;
-
-                console.log(data);
-            });
+       
 
     </script>
 
