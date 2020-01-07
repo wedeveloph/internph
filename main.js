@@ -24,7 +24,7 @@ var main = new Vue({
         
         fetchData: function(){
             
-            var uwu = [];
+            var self = this;
             
              var url = "https://spreadsheets.google.com/feeds/list/1073N87suMlax63_94Jip5AaQxcq2Hxw5EnTJYMNKbg0/2/public/basic?alt=json";
         
@@ -71,11 +71,10 @@ var main = new Vue({
                    test.push(parse(i));
                 }
             
-                uwu = test;
             
-                /* this.entries =  [
-    {company: "COMPANY", pay: '305-917-1301', notes: 'IT Manager', industry: 'industry' },
-    {  company: "COMPANY", pay: '210-684-8953', notes: 'Paleontologist', industry: 'industry' }]; */
+             document.getElementById("count").innerHTML = test.length;
+            
+            self.entries = test;
             
                 console.log(test);
             
@@ -83,12 +82,10 @@ var main = new Vue({
             
             setTimeout(() => {
             
-            document.getElementById("count").innerHTML = uwu.length;
-            this.entries = uwu;
-            
+        
     
             
-            }, 1000);
+            }, 2000);
         },
         
         sort: function(key){
