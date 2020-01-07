@@ -79,13 +79,6 @@ var main = new Vue({
                 console.log(test);
             
             });
-            
-            setTimeout(() => {
-            
-        
-    
-            
-            }, 2000);
         },
         
         sort: function(key){
