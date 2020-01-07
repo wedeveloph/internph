@@ -12,6 +12,7 @@
 h1.site-title{
     font-size:3.8em;
     padding-top:.5em;
+    color:#fff;
 }
 
 a.link {
@@ -38,12 +39,36 @@ a.link:hover {
 
 /* TABLE */
 
+#internships h1{
+    float:left;
+}
 
+#internships input.t-search{
+    float:right;
+    display:inline-block;
+    width:60%;
+    max-width:300px;
+}
 
-table#internships {
+@media screen and (max-width: 850px){
+    
+    #internships h1, #internships input.t-search{
+        float:left;
+        clear:both;
+    }
+       
+}
+
+table {
     padding: 1em;
+    width:90%;
     max-width:900px;
     border-collapse: collapse;
+    
+}
+
+thead tr{
+    text-align: left;
 }
 
 th {
@@ -74,14 +99,15 @@ td.t-name{
     font-weight:600;
     color:#fff;
     line-height:1.3em;
-    
+    width:25%;
 }
 
-td.t-pay{font-size:.9em; line-height:1.3em;}
+td.t-pay{font-size:.9em; line-height:1.3em; width:18%;}
 
 td.t-notes{
     font-size:.8em;
     line-height:1.3em;
+    width:57%;
 }
 
 /* FOOTER */

@@ -34,11 +34,17 @@
         <div class="box" style="padding-bottom:2em">
 
 
-            <div id="main-list">
+            <div id="internships">
+                
                 <h1 style="text-align: center;"> <span id="count"></span> companies & counting... </h1>
+                
+                <input class="t-search" type="text" v-model="search" placeholder="Search company...">
 
                 <center>
-                    <table id="internships" v-if="entries">
+                    
+  
+                    
+                    <table v-if="entries">
                         <thead>
                             <tr>
                                 <th v-on:click="sortTable(col)">
@@ -54,7 +60,7 @@
                             </tr>
                         </thead>
                         <tbody>
-                            <tr v-for="entry in entries">
+                            <tr v-for="entry in query">
                         
                               <td class="t-name">
                                   {{ entry.company }}

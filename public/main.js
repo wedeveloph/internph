@@ -9,6 +9,7 @@ var sheet = "https://spreadsheets.google.com/feeds/list/1073N87suMlax63_94Jip5Aa
 var main = new Vue({
     el: '#internships',
     data: {
+        search: "",
         entries: []
     },
     
@@ -94,6 +95,16 @@ var main = new Vue({
             
         }
         
+    },
+    
+    computed: {
+        
+        query() {
+          return this.entries.filter(entry => {
+            return entry.company.toLowerCase().includes(this.search.toLowerCase())
+          })
+        }
+
     }
 
 });
