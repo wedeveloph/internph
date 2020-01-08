@@ -151,7 +151,7 @@ td {
 tr {
     line-height: 3.5em;
     vertical-align: middle;
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid #696969;
 }
 
 tr th.th-sort {
@@ -237,8 +237,7 @@ footer a:hover {
     }
 
     td {
-        padding-left: .3em;
-        padding-right: .3em;
+        padding: 1em;
     }
 
     td.t-name {}
