@@ -1,10 +1,10 @@
+/* iM SORRY */
+
 
 document.getElementById("last").innerHTML = document.lastModified;
 
 
-// import data from './internships.json'
 var sheet = "https://spreadsheets.google.com/feeds/list/1073N87suMlax63_94Jip5AaQxcq2Hxw5EnTJYMNKbg0/2/public/basic?alt=json";
-
 
 var main = new Vue({
     el: '#internships',
@@ -33,7 +33,6 @@ var main = new Vue({
         function parse(data){
             
             
-            
             let temp = {
                 company: data.title.$t,
                 role: null,
@@ -41,19 +40,11 @@ var main = new Vue({
                 notes: null
             };
             
-            let n = data.content.$t.split(',');
             
-            for(let i of n){
- 
-                let durr = i.split(":");
-                
-                switch(durr[0].replace(/ /g,'')){
-                    case "pay":
-                        temp.pay = durr[1].trim().toLowerCase(); break;
-                    case "notes":
-                        temp.notes = durr[1].trim(); break;
-                } 
-            }
+            temp.pay = data.content.$t.split(',')[0].substr(4).trim().toLowerCase();
+            
+            temp.notes = (data.content.$t.split(',').slice(1).join(',')).substr(8);
+            
             
             return temp;
             
@@ -67,8 +58,9 @@ var main = new Vue({
             
                 let test = [];
             
+            
                 for(let i of res.feed.entry){
-                   test.push(parse(i));
+                 test.push(parse(i));
                 }
             
             
@@ -76,7 +68,7 @@ var main = new Vue({
             
             self.entries = test;
             
-                console.log(test);
+               // console.log(test);
             
             });
         },
