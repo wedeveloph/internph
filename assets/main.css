@@ -160,8 +160,8 @@ td.t-name {
     color: #fff;
     font-size: .9em;
     line-height: 1.4em;
-    width: 22%;
-    max-width: 200px;
+    width: 18%;
+    max-width: 190px;
 }
 
 td.t-pay {
@@ -175,7 +175,6 @@ td.t-pay {
 td.t-notes {
     font-size: calc(11px + .3vw);
     line-height: 1.3em;
-
 }
 
 
@@ -269,16 +268,21 @@ footer a:hover {
         font-size: 1em;
     }
 
-    td {
-        padding: 1em;
+
+    td.t-name {
+        font-size: .8em;
+        padding: 1em .5em;
     }
 
-    td.t-name {}
+    td.t-pay {
+        font-size: .8em;
+        padding: 1em .5em;
+    }
 
-    td.t-pay {}
 
-
-    td.t-notes {}
+    td.t-notes {
+        max-width: 40% !important;
+    }
 
 
 }
