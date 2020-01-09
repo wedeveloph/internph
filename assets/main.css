@@ -293,7 +293,9 @@ footer a:hover {
     }
 
     .navigation-buttons button {
-        width: 70px !important;padding: 1em .5em !important;
+        width: 70px !important;
+        padding: 1em .5em !important;
+        margin: 0 .5em !important;
     }
 
 
