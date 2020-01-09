@@ -16,7 +16,7 @@ html {
     --bg-dark-color: #121212;
 
     --text-color: #b5b5b1;
-    --text-color-darker: #252427;
+    --text-color-darker: #454545;
     --text-dark-color: #768081;
     --text-light-color: #c9c6d1;
     --text-accent: #141cd1;
@@ -176,7 +176,7 @@ button {
     color: var(--text-light-color);
     background: var(--text-color-darker);
 
-    padding: .5em;
+    padding: 1em 2em;
     border: none;
     border-radius: .5em;
     font-family: inherit;
