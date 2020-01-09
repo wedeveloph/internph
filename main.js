@@ -26,24 +26,24 @@ var main = new Vue({
 
         nextPage: function () {
 
-            $("#btn-prev").attr("disabled", false);
+            $(".btn-prev").attr("disabled", false);
 
             if (this.currentPage * this.pageSize < this.entries.length) this.currentPage++;
 
             if (this.currentPage * this.pageSize > this.entries.length) {
-                $("#btn-next").attr("disabled", true);
+                $(".btn-next").attr("disabled", true);
             }
 
         },
 
         prevPage: function () {
 
-            $("#btn-next").attr("disabled", false);
+            $(".btn-next").attr("disabled", false);
 
             if (this.currentPage > 1) this.currentPage--;
 
             if (this.currentPage == 1) {
-                $("#btn-prev").attr("disabled", true);
+                $(".btn-prev").attr("disabled", true);
             }
 
 
