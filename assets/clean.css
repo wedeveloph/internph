@@ -176,7 +176,7 @@ button {
     color: var(--text-light-color);
     background: var(--text-color-darker);
 
-    padding: 1em 2em;
+    padding: 1em;
     border: none;
     border-radius: .5em;
     font-family: inherit;
