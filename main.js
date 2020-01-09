@@ -81,11 +81,11 @@ var main = new Vue({
                     this.sortByCompany = 1;
 
                     this.entries.sort((a, b) => {
-                        if (a.company < b.company) {
+                        if (a.company.toLowerCase() < b.company.toLowerCase()) {
                             return 1
                         }
 
-                        if (a.company > b.company) {
+                        if (a.company.toLowerCase() > b.company.toLowerCase()) {
                             return -1
                         }
 
@@ -96,11 +96,11 @@ var main = new Vue({
                     this.sortByCompany = 0
 
                     this.entries.sort((a, b) => {
-                        if (a.company > b.company) {
+                        if (a.company.toLowerCase() > b.company.toLowerCase()) {
                             return 1
                         }
 
-                        if (a.company < b.company) {
+                        if (a.company.toLowerCase() < b.company.toLowerCase()) {
                             return -1
                         }
 
