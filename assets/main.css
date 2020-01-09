@@ -92,7 +92,9 @@ a.link:hover {
 }
 
 #internships button {
-    margin: 0 2em;
+    display: inline-block;
+    width: 90px;
+    margin: 1em 1em;
 }
 
 #internships a {
@@ -227,7 +229,7 @@ td.t-pay[data-pay="stipend only"]::after {
 
 .navigation-buttons button {
     display: inline-block;
-    width: 80px;
+    width: 80px !important;
     text-align: center;
     margin: 0 1em !important;
     font-size: .8em;
