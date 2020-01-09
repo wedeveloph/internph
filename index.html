@@ -50,6 +50,7 @@
 
     <div id="container">
 
+
         <div class="box" id="header">
             <div class="box-inner">
 
@@ -73,10 +74,21 @@
 
             <div id="internships">
 
+
+                <div class="navigation">
+
+                    <div class="navigation-inner">
+                        <input class="t-search" type="text" v-model="search" placeholder="Search company...">
+
+                        <div class="navigation-buttons">
+                            <button id="btn-prev" @click="prevPage" disabled="true">Previous</button>
+                            <button id="btn-next" @click="nextPage">Next</button>
+                        </div>
+                    </div>
+                </div>
+
                 <div class="internships-top">
                     <h2> <span id="count"></span> companies & counting... </h2>
-
-                    <input class="t-search" type="text" v-model="search" placeholder="Search company...">
 
                 </div>
 
@@ -110,6 +122,8 @@
                         </tr>
                     </tbody>
                 </table>
+
+
 
                 <section>
                     <a href="#">UP ↑</a>

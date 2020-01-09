@@ -12,7 +12,8 @@ var main = new Vue({
         search: "",
         sortByCompany: 0,
         sortByPay: 0,
-        reverse: false,
+        pageSize: 50,
+        currentPage: 1,
         entries: []
     },
 
@@ -22,6 +23,31 @@ var main = new Vue({
     },
 
     methods: {
+
+        nextPage: function () {
+
+            $("#btn-prev").attr("disabled", false);
+
+            if (this.currentPage * this.pageSize < this.entries.length) this.currentPage++;
+
+            if (this.currentPage * this.pageSize > this.entries.length) {
+                $("#btn-next").attr("disabled", true);
+            }
+
+        },
+
+        prevPage: function () {
+
+            $("#btn-next").attr("disabled", false);
+
+            if (this.currentPage > 1) this.currentPage--;
+
+            if (this.currentPage == 1) {
+                $("#btn-prev").attr("disabled", true);
+            }
+
+
+        },
 
         fetchData: function () {
 
@@ -161,7 +187,18 @@ var main = new Vue({
 
             return this.entries.filter(entry => {
                 return entry.company.toLowerCase().includes(this.search.toLowerCase())
+            }).filter((row, index) => {
+
+                let start = (this.currentPage - 1) * this.pageSize;
+                let end = this.currentPage * this.pageSize;
+                if (index >= start && index < end) return true;
+
+
             })
+
+            /*   return this.entries.filter(entry => {
+                  return entry.company.toLowerCase().includes(this.search.toLowerCase())
+              }) */
 
 
         }
