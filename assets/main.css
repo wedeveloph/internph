@@ -219,6 +219,7 @@ td.t-pay[data-pay="stipend only"]::after {
 
 .navigation-buttons {
     float: right;
+    z-index: 9999;
 }
 
 .navigation-buttons button {
