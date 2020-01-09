@@ -292,5 +292,9 @@ footer a:hover {
         max-width: 40% !important;
     }
 
+    .navigation-buttons button {
+        width: 70px !important;padding: 1em .5em !important;
+    }
+
 
 }
