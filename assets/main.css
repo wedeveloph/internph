@@ -1,7 +1,7 @@
 :root {
 
-    --accent: #fff;
-    --accent-over: #e5e0e0;
+    --accent: #F4BA9D;
+    --accent-over: #F4BA9D;
 
 }
 
@@ -162,7 +162,7 @@ thead {
 
 td.t-name {
     font-weight: 600;
-    color: #fff;
+    color: #FBE7D0;
     font-size: .9em;
     line-height: 1.4em;
     width: 18%;

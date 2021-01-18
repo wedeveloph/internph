@@ -15,13 +15,13 @@ html {
     --bg-color: #1C1631;
     --bg-dark-color: #1C1631;
 
-    --text-color: #b5b5b1;
+    --text-color: #e5e5ca;
     --text-color-darker: #454545;
     --text-dark-color: #768081;
     --text-light-color: #c9c6d1;
-    --text-accent: #141cd1;
+    --text-accent: #F4BA9D;
 
-    --ele-light: #e5e4eb;
+    --ele-light: #F4BA9D;
     --ele-line: #535353;
     --ele-highlight: #141cd1;
 
