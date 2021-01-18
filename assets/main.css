@@ -77,8 +77,8 @@ a.link {
 }
 
 a.link:hover {
-    background: #000;
-    color: #fff;
+    background: #F4BA9D;
+    color: #000;
 }
 
 
@@ -236,6 +236,9 @@ td.t-pay[data-pay="stipend only"]::after {
 
 #footer {
     padding-top: 3.5em;
+  font-size: .8em;
+  text-align: center;
+  line-height: 150%;
 }
 
 #footer a,
