@@ -203,6 +203,7 @@ td.t-pay[data-pay="stipend only"]::after {
     padding: 1em;
     justify-content: center;
     display: flex;
+  background: #201835;
 }
 
 .navigation-inner {
@@ -216,6 +217,8 @@ td.t-pay[data-pay="stipend only"]::after {
     max-width: 300px;
     font-size: .8em;
     float: left;
+  background: transparent;
+  border: 1px solid #F4BA9D;
 }
 
 .navigation-buttons {
