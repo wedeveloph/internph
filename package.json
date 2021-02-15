@@ -1,0 +1,19 @@
+{
+  "name": "internph",
+  "version": "1.0.0",
+  "description": "migration of intern.ph to a node-express-mongodb-vue setup",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wedeveloph/internph.git"
+  },
+  "author": "Developh",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/wedeveloph/internph/issues"
+  },
+  "homepage": "https://github.com/wedeveloph/internph#readme"
+}
