@@ -3,7 +3,7 @@ const mongodb = require('mongodb');
 
 
 // db connect to
-const url = process.env.MONGODB_URI || 'mongodb://localhost:27017/internPH';
+const url = process.env.MONGODB_URI || 'mongodb://localhost:27017/internph';
 
 
 // additional connection options
