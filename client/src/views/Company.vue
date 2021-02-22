@@ -1,6 +1,6 @@
 <template>
     <div>
-      <CompanyCard/>
+      <CompanyCard v-bind:companyCards="companyCards"/>
     </div>
 </template>
 
@@ -12,8 +12,19 @@ export default {
     CompanyCard
   },
   name: 'Company',
-  props: {
-    msg: String
+  data() {
+    return {
+      companyCards: [
+        {
+          id: 1,
+          name: "Developh Philippines"
+        },
+        {
+          id: 2,
+          name: "Developh Vietnam"
+        },
+      ]
+    }
   }
 }
 </script>
