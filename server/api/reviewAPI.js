@@ -1,13 +1,16 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 
-const db = require('../dbModels/db.js');
+const db = require('../dbModels/_db.js');
+const Company = require('../dbModels/company.js');
+const Review = require('../dbModels/review.js');
+
 const assert = require('assert');
 const mongo = require('mongodb');
 
 const app = express();
 
-const homeAPI = {
+const reviewAPI = {
     //  Get reviews
     getReview: async (req, res) =>{
 
@@ -23,14 +26,4 @@ const homeAPI = {
 }
 
 
-module.exports = homeAPI;
-
-
-
-
-
-
-
-
-
-module.exports = app;
+module.exports = reviewAPI;
