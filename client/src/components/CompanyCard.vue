@@ -1,8 +1,9 @@
 <template>
 <div>
-    <div v-for="company in companyCards" v-bind:key="company.id">
-        <h3>{{company.name}}</h3>
-        
+    <div v-for="(company) in companyCards" :key="company.name">
+        Name: {{company.name}}<br>
+        Longbio: {{company.longbio}} <br>
+        Shortbio: {{company.shortbio}} <br>
     </div>
 </div>
 </template>

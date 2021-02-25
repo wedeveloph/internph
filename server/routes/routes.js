@@ -3,6 +3,8 @@ const bodyParser = require('body-parser');
 const app = express();
 
 const companyAPI = require('../api/companyAPI.js');
-app.get("/", companyAPI.getAllCompanies);
+const reviewAPI = require('../api/companyAPI.js');
+app.get("/api/companies", companyAPI.getAllCompanies);
+app.get("/api/reviews", reviewAPI.getReview);
 
 module.exports = app;
