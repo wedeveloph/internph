@@ -11,10 +11,12 @@
 
 <script>
 //import HelloWorld from './components/HelloWorld.vue'
+import Navbar from './components/layout/Navbar.vue';
 
 export default {
   name: 'App',
   components: {
+    Navbar
   }
 }
 </script>
