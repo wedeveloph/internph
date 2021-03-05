@@ -1,9 +1,8 @@
 const mongoose = require('mongoose');
 const mongodb = require('mongodb');
 
-
 // db connect to
-const url = process.env.MONGODB_URI || 'mongodb://localhost:27017/internph';
+const url = process.env.MONGODB_URI || 'mongodb+srv://admin:admin123@cluster0.gftqd.mongodb.net/internph?retryWrites=true&w=majority' || 'mongodb://localhost:27017/internph' ;
 
 
 // additional connection options

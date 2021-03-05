@@ -1,10 +1,10 @@
 <template>
 <div>
-    <div v-for="(company) in companyCards" :key="company.name">
+    <v-card v-for="(company) in companyCards" :key="company.name">
         Name: {{company.name}}<br>
         Longbio: {{company.longbio}} <br>
         Shortbio: {{company.shortbio}} <br>
-    </div>
+    </v-card>
 </div>
 </template>
 
