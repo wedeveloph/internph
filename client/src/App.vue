@@ -2,6 +2,7 @@
   <div>
   <v-app id="app">
     <div class="content-wrap">
+      <Navbar/>
       <router-view/>
     </div>
   </v-app>
@@ -14,7 +15,6 @@
 export default {
   name: 'App',
   components: {
-    //HelloWorld
   }
 }
 </script>
@@ -26,7 +26,7 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: white;
-  margin-top: 60px;
+  margin-top: 42px;
   background-color: #171423;
 }
 

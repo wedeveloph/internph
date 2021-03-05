@@ -17,8 +17,11 @@ export default {};
        display: flex;
        justify-content: space-between;
        background: linear-gradient(180deg, #171423 53.12%, rgba(23, 20, 35, 0) 100%);
-       margin-top: -60px;
+       margin-top: -42px;
        height: 80px;
+       width: -webkit-fill-available;
+       position: fixed;
+       z-index: 1;
        p {
             margin-left: 5%;
             margin-top: 0.5rem;
@@ -28,8 +31,11 @@ export default {};
    #links {
        display: flex;
        margin-top: 0.5rem;
+       margin-right: 5%;
+       
        li {
            display: block;
+           margin-right: 10px;
        }
    }
 </style>
