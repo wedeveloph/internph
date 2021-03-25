@@ -1,10 +1,12 @@
 <template>
     <div>
       <!-- Search Tool Here -->
-      <div id="search-field">
-        <input type="text" v-bind:value="targetText" v-on:input="targetText = $event.target.value" placeholder="Input Text" id="search-input-format" />
+      <div>
+        <div id="search-field">
+          <input type="text" v-bind:value="targetText" v-on:input="targetText = $event.target.value" placeholder="Input Text" id="search-input-format" />
+        </div>
+        <button v-on:click="showText(targetText)" id="click-the-button">Click Me!</button>
       </div>
-      <button v-on:click="showText(targetText)" id="click-the-button">Click Me!</button>
       <p>VIEW COMPANIES</p>
       <h2>Startups</h2>
       <CompanyCard v-bind:companyCards="companyCards"/>

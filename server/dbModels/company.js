@@ -24,6 +24,18 @@ var CompanySchema = new mongoose.Schema({
     logo: {
         type: String,
         required: false
+    },
+    mapValue: {
+        type: String,
+        required: false
+    },
+    payValue: {
+        type: String,
+        required: false
+    },
+    timeValue: {
+        type: String,
+        required: false
     }
 });
 

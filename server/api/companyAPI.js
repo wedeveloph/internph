@@ -13,7 +13,7 @@ const app = express();
 const companyAPI = {
     //  Get all companies in the collection
     getAllCompanies:  (req, res) =>{
-        projection = 'name shortbio longbio website';
+        projection = 'name shortbio longbio website logo payValue mapValue timeValue';
 
          db.findMany(Company, {}, projection, (compRes)=>{
              console.log(compRes);

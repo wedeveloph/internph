@@ -2,8 +2,9 @@
     <v-row id="nav">
         <p>Intern.ph</p>
         <ul id="links">
-            <li> Link 1 </li>
-            <li> Link 2 </li>
+            <li> Companies </li>
+            <li> Saved </li>
+            <li> Submit </li>
         </ul>
     </v-row>
 </template>
